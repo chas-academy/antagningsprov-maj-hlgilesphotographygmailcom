@@ -1,5 +1,3 @@
-
-
 function uppg8(){
 
 // skapa en array med fem person obkjet
@@ -11,7 +9,22 @@ function uppg8(){
 
 // anropa funktionen och skicka med arrayen som argument
 
+const people = [
+    { name: "Hannah", age: 26 },
+    { name: "Karen", age: 39 },
+    { name: "Pia", age: 41 },
+    { name: "Jonas", age: 22 },
+    { name: "Samuel", age: 48 }
+];
 
+function logOverThirty(array) {
+    array.forEach(person => {
+        if (person.age > 30) {
+            console.log(person.name);
+        }
+    });
 }
 
+logOverThirty(people);
+}
 module.exports = { uppg8 };

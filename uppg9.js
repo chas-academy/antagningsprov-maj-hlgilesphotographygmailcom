@@ -1,5 +1,3 @@
-
-
 function uppg9 (){
     // skapa en funktion som heter sort och tar in en array av siffror som argument
     // i funktionen du loopa igenom arrayen och kolla med en if-sats om  talet är jämt eller udda
@@ -8,7 +6,17 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
+    function sort(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                console.log(arr[i], "jämt");
+            } else {
+                console.log(arr[i], "udda");
+            }
+        }
+    }
+
+    sort([1, 2, 3, 4, 5, 6]);
   
 }
-
 module.exports = { uppg9 };
